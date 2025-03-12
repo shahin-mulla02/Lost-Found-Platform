@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <header>
+        <h1>Lost & Found Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#submit-item">Submit Item</a></li>
+                <li><a href="#search">Search Items</a></li>
+                <li><a href="#view-items">View Submitted Items</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#submit-item">Submit Item</a></li>
+                <li><a href="#search">Search Items</a></li>
+                <li><a href="#view-items">View Items</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section id="register">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+
+            <section id="login">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Enter your email" required>
+                    <input type="password" id="login-password" placeholder="Enter password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </section>
+
+            <section id="submit-item">
+                <h2>Submit Lost/Found Item</h2>
+                <form id="item-form">
+                    <input type="text" id="item-name" placeholder="Item Name" required>
+                    <input type="file" id="item-image" required>
+                    <input type="text" id="location" placeholder="Location" required>
+                    <input type="date" id="item-date" required>
+                    <select id="item-type" required>
+                        <option value="lost">Lost</option>
+                        <option value="found">Found</option>
+                    </select>
+                    <button type="submit">Submit Item</button>
+                </form>
+            </section>
+
+            <section id="search">
+                <h2>Search for Items</h2>
+                <input type="text" id="search-input" placeholder="Search for items...">
+                <button id="search-btn">Search</button>
+                <div id="search-results"></div>
+            </section>
+
+            <section id="view-items">
+                <h2>View Submitted Items</h2>
+                <div id="submitted-items-list"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
